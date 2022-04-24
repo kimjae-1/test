@@ -30,7 +30,7 @@
 # 실행방법
 1. git clone
 ```
-(링크)
+git clone https://github.com/bmiskkuedu/synthetic_cancer_patients.git
 
 ```
 

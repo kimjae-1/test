@@ -42,6 +42,10 @@ git clone https://github.com/bmiskkuedu/synthetic_cancer_patients.git
 
 2. 가상환경 설정 및 필요 패키지 설치
 ```
+conda create -n 가상환경이름 python=3.7.13
+
+conda install -c anaconda tensorflow-gpu==2.2.0
+
 pip3 install -r requirements.txt
 ```
 

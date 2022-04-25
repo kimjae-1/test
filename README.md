@@ -17,8 +17,6 @@
         ├── models.py
         ├── recon.py
         ├── utils.py
-        
-
         ├── data(폴더만 존재하는 상태)
         │       ├── CLRC
         │            ├──  clrc_pt_bsnf.csv

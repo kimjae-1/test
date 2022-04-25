@@ -7,11 +7,17 @@
 
 # 파일구조(참고)
 ```
+        ├──backup
+        ├──.gitignore
+        ├──data_pipeline_extract.py
+        ├──data_pipeline_ref.py
         ├── data_pipeline_v1.py
-        ├── main.py
+        ├── data_pipeline_v2.py
+        ├── main_v1.py
         ├── models.py
-        ├── utils.py
         ├── recon.py
+        ├── utils.py
+        
 
         ├── data(폴더만 존재하는 상태)
         │       ├── CLRC
@@ -37,5 +43,10 @@ git clone https://github.com/bmiskkuedu/synthetic_cancer_patients.git
 2. 가상환경 설정 및 필요 패키지 설치
 ```
 pip3 install -r requirements.txt
+```
+
+3. main.py 실행
+```
+python3 main_v1.py
 ```
 

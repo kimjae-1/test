@@ -45,7 +45,7 @@ git clone https://github.com/bmiskkuedu/synthetic_cancer_patients.git
 pip3 install -r requirements.txt
 ```
 
-3. main.py 실행
+3. main.py 실행(서버 기준)
 ```
 python3 main_v1.py
 ```

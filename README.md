@@ -1,8 +1,8 @@
 # 전달사항
-* 데이터의 경우, clrc_pt_bsnf.csv, clrc_ex_diag1.csv, clrc_ex_diag2.csv 이 3개의 파일을 사용합니다.
+* 데이터의 경우, clrc_pt_bsnf.csv(대장암_환자_기본정보), clrc_ex_diag1.csv(대장암_검사_진단), clrc_ex_diag2.csv(대장암_검사_진단) 이 3개의 파일을 사용합니다.
 
 
-  data 폴더 - CLRC 폴더에 해당 데이터를 넣어주시면 되겠습니다.(아래 파일구조 참고)
+  해당 데이터들을 data 폴더 - CLRC 폴더에 넣어주시면 되겠습니다.(아래 파일구조 참고)
 * 코드가 정상적으로 동작하는지 확인하는 게 목표이기 때문에, Training의 경우 epoch을 1로 설정하였습니다.
 
 # 파일구조(참고)

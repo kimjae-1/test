@@ -3,20 +3,21 @@
 
 
   해당 데이터들을 data 폴더 - CLRC 폴더에 넣어주시면 되겠습니다.(아래 파일구조 참고)
-* 코드가 정상적으로 동작하는지 확인하는 게 목표이기 때문에, Training의 경우 epoch을 1로 설정하였습니다.
+
 
 # 파일구조(참고)
 ```
-        ├──backup
-        ├──.gitignore
-        ├──data_pipeline_extract.py
-        ├──data_pipeline_ref.py
-        ├── data_pipeline_v1.py
-        ├── data_pipeline_v2.py
-        ├── main_v1.py
-        ├── models.py
-        ├── recon.py
-        ├── utils.py
+        ├──utils
+        ├──aegan.py
+        ├──autoencoder.py
+        ├──basic.py
+        ├──gan.py
+        ├──main_2012.py
+        ├──miss2012.py
+        ├──missingprocessor.py
+        ├──physionet2012.py
+        ├──preprocess.py
+        ├──stdprocessor.py
         ├── data(폴더만 존재하는 상태)
         │       ├── CLRC
         │            ├──  clrc_pt_bsnf.csv
@@ -28,7 +29,7 @@
 # 가상환경 설정
 
 * conda create -n 가상환경이름 python=3.7.13
-* conda install -c anaconda tensorflow-gpu==2.2.0
+* 
 * pip3 install -r requirements.txt
 
 # 실행방법
@@ -47,8 +48,18 @@ conda install -c anaconda tensorflow-gpu==2.2.0
 pip3 install -r requirements.txt
 ```
 
-3. main.py 실행(서버 기준)
+3. preprocess.py 실행(전처리)
 ```
-python3 main_v1.py
+python3 preprocess.py
+```
+학습에 필요한 connect_clrc.pkl이 rtsgan-connect-data 폴더 내부에 생성됩니다.
+
+4. 모델 학습
+```
+python3 경로/main2_012.py \--dataset 경로/rtsgan-connect-data/connect_clrc.pkl \--epoch 11 \--iterations 1 \--log-dir ./result \--task-name test \--python-seed 42 \
 ```
 
+5.합성 데이터 평가
+```
+python3 경로/miss2012.py \--dataset ./result/test/train_replaced_with_syn.pkl \--task-name miss \--impute zero
+```

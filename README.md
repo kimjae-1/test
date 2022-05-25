@@ -57,6 +57,7 @@ python3 preprocess.py
 python3 경로/main_2012.py \--dataset 경로/rtsgan-connect-data/connect_clrc.pkl \--epoch 11 \--iterations 1 \--log-dir ./result \--task-name test \--python-seed 42 \
 ```
 ./result/test/ 경로에 train_replaced_with_syn.pkl(합성데이터)이 생성됩니다.
+
 5.합성 데이터 평가
 ```
 python3 경로/miss2012.py \--dataset ./result/test/train_replaced_with_syn.pkl \--task-name miss \--impute zero

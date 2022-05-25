@@ -28,7 +28,7 @@
 
 # 가상환경 설정
 
-* conda create -n 가상환경이름 python=3.7.13
+* conda create -n 가상환경이름 python=3.7
 * 
 * pip3 install -r requirements.txt
 
@@ -41,9 +41,7 @@ git clone https://github.com/bmiskkuedu/synthetic_cancer_patients.git
 
 2. 가상환경 설정 및 필요 패키지 설치
 ```
-conda create -n 가상환경이름 python=3.7.13
-
-conda install -c anaconda tensorflow-gpu==2.2.0
+conda create -n 가상환경이름 python=3.7
 
 pip3 install -r requirements.txt
 ```
@@ -56,9 +54,9 @@ python3 preprocess.py
 
 4. 모델 학습
 ```
-python3 경로/main2_012.py \--dataset 경로/rtsgan-connect-data/connect_clrc.pkl \--epoch 11 \--iterations 1 \--log-dir ./result \--task-name test \--python-seed 42 \
+python3 경로/main_2012.py \--dataset 경로/rtsgan-connect-data/connect_clrc.pkl \--epoch 11 \--iterations 1 \--log-dir ./result \--task-name test \--python-seed 42 \
 ```
-
+./result/test/ 경로에 train_replaced_with_syn.pkl(합성데이터)이 생성됩니다.
 5.합성 데이터 평가
 ```
 python3 경로/miss2012.py \--dataset ./result/test/train_replaced_with_syn.pkl \--task-name miss \--impute zero

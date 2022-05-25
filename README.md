@@ -62,4 +62,6 @@ python3 경로/main_2012.py \--dataset 경로/rtsgan-connect-data/connect_clrc.p
 python3 경로/miss2012.py \--dataset ./result/test/train_replaced_with_syn.pkl \--task-name miss \--impute zero
 ```
 Examine the quality of synthetic data under the TSTR setting
+
+
 /miss/test_info 경로에 info.log가 생성됩니다.

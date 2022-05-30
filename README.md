@@ -2,29 +2,30 @@
 * 데이터의 경우, clrc_pt_bsnf.csv(대장암_환자_기본정보), clrc_ex_diag1.csv(대장암_검사_진단), clrc_ex_diag2.csv(대장암_검사_진단) 이 3개의 파일을 사용합니다.
 
 
-  해당 데이터들을 data 폴더 - CLRC 폴더에 넣어주시면 되겠습니다.(아래 파일구조 참고)
+  해당 데이터들을 RTSGAN-github/data/CLRC/ 에 넣어주시면 되겠습니다.(아래 파일구조 참고)
 
 
 # 파일구조(참고)
 ```
-        ├──utils
-        ├──aegan.py
-        ├──autoencoder.py
-        ├──basic.py
-        ├──gan.py
-        ├──main_2012.py
-        ├──tstr.py
-        ├──missingprocessor.py
-        ├──physionet2012.py
-        ├──preprocess.py
-        ├──stdprocessor.py
-        ├── data(폴더만 존재하는 상태)
-        │       ├── CLRC
-        │            ├──  clrc_pt_bsnf.csv
-        │            ├──  clrc_ex_diag1.csv
-        │            └──  clrc_ex_diag2.csv
-        └── requirements.txt
-``` 
+├──RTSGAN-github
+    ├──utils
+    ├──aegan.py
+    ├──autoencoder.py
+    ├──basic.py
+    ├──gan.py
+    ├──main_2012.py
+    ├──tstr.py
+    ├──missingprocessor.py
+    ├──physionet2012.py
+    ├──preprocess.py
+    ├──stdprocessor.py
+    ├── data(폴더만 존재하는 상태)
+    │       ├── CLRC
+    │            ├──  clrc_pt_bsnf.csv
+    │            ├──  clrc_ex_diag1.csv
+    │            └──  clrc_ex_diag2.csv
+    └── requirements.txt
+  ``` 
 
 # 가상환경 설정
 

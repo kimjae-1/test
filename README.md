@@ -38,7 +38,7 @@
   ├──home/tohone06
     ├──tstr0618 : 1차 
     ├──miss0619 : 2차
-    ├──'' : 병기값 업데이트 x 
+    ├──stage_none : 병기값 업데이트 x 
  
  ``` 
 update : 06.20 

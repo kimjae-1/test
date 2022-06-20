@@ -19,13 +19,32 @@
     ├──physionet2012.py
     ├──preprocess.py
     ├──stdprocessor.py
+    ├──connect-to-physionet-style(0617).ipynb
+    ├──connect-to-physionet-style(stage_none).ipynb =>병기값 업데이트 x 관련 코드
     ├── data(폴더만 존재하는 상태)
     │       ├── CLRC
-    │            ├──  clrc_pt_bsnf.csv
-    │            ├──  clrc_ex_diag1.csv
-    │            └──  clrc_ex_diag2.csv
+    │       ├── stage_none     
+    │            
+    │            
     └── requirements.txt
-  ``` 
+ 
+ 
+ 
+ ├──result
+    ├──0618 : 1차 
+    ├──0619 : 2차
+    ├──stage_none : 병기값 업데이트 x 
+   
+  ├──home/tohone06
+    ├──tstr0618 : 1차 
+    ├──miss0619 : 2차
+    ├──'' : 병기값 업데이트 x 
+ 
+ ``` 
+update : 06.20 
+
+
+
 
 # 가상환경 설정
 
